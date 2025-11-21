@@ -1,0 +1,385 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* 个人简介部分样式 */
+.intro {
+    padding: 60px 0;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-pic {
+    flex-shrink: 0;
+}
+
+.bio h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.bio p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 研究领域部分样式 */
+.research-areas {
+    padding: 60px 0;
+}
+
+.research-areas h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.area-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.area-item h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.area-item p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* 最新动态样式 */
+.news {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.news h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-list li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+}
+
+.news-list .date {
+    font-weight: bold;
+    color: #3498db;
+    min-width: 100px;
+}
+
+.news-list p {
+    color: #555;
+    flex: 1;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* 研究成果页面样式 */
+.research-page {
+    padding: 60px 0;
+}
+
+.research-page h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.publication-list {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.publication-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.publication-authors {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.publication-venue {
+    color: #3498db;
+    font-style: italic;
+}
+
+/* 教学经历页面样式 */
+.teaching-page {
+    padding: 60px 0;
+}
+
+.teaching-page h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.courses {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.course-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.course-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    color: #666;
+}
+
+/* 联系方式页面样式 */
+.contact-page {
+    padding: 60px 0;
+}
+
+.contact-page h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #2c3e50;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    nav .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links li {
+        margin: 0 10px;
+    }
+    
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-list li {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .news-list .date {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    .bio h2,
+    .research-areas h2,
+    .news h2,
+    .research-page h2,
+    .teaching-page h2,
+    .contact-page h2 {
+        font-size: 24px;
+    }
+    
+    .intro,
+    .research-areas,
+    .news,
+    .research-page,
+    .teaching-page,
+    .contact-page {
+        padding: 40px 0;
+    }
+}
