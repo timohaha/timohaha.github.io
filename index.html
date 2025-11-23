@@ -1,88 +1,407 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人学术网站</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周弈志个人学术网站</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- 导航栏 -->
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <h1>张教授</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="research.html">研究成果</a></li>
-                <li><a href="teaching.html">教学经历</a></li>
-                <li><a href="contact.html">联系方式</a></li>
+  <!-- 导航栏 -->
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <h1>Yizhi Zhou</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#intro">个人简介</a></li>
+        <li><a href="#research-areas">研究领域</a></li>
+        <li><a href="#publications">研究成果</a></li>
+        <li><a href="#teaching">教学经历</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 个人简介部分 -->
+  <section id="intro" class="intro">
+    <div class="container">
+      <div class="intro-content">
+        <div class="profile-pic">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="90" fill="#f0f0f0" stroke="#ddd" stroke-width="2" />
+            <text x="100" y="110" font-family="Arial" font-size="36" text-anchor="middle" fill="#666">周弈志</text>
+          </svg>
+        </div>
+        <div class="bio">
+          <h2>个人简介</h2>
+          <p>您好！我是周弈志，现任大连海洋大学讲师。我的主要研究方向包括联邦学习、人工智能、大数据分析及计算机视觉技术在海洋信息领域的应用。</p>
+          <p>近年来在IEEE Transactions on Mobile Computing、IEEE Transactions on Multimedia、Knowledge-Based
+            Systems、计算机学报等国内外高水平期刊发表多篇论文，参与多项国家级科研项目，并获得发明专利多项。致力于将人工智能前沿技术与海洋科学相结合，培养具有创新能力的计算机专业人才。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 研究领域部分 -->
+  <section id="research-areas" class="research-areas">
+    <div class="container">
+      <h2>研究领域</h2>
+      <div class="areas-grid">
+        <div class="area-item">
+          <h3>联邦学习</h3>
+          <p>专注于数据异构性、长尾分布等挑战下的联邦学习算法研究，包括异步联邦学习、梯度优化等关键技术。</p>
+        </div>
+        <div class="area-item">
+          <h3>人工智能</h3>
+          <p>研究深度学习、表示学习等AI前沿技术，探索其在复杂场景下的理论与应用创新。</p>
+        </div>
+        <div class="area-item">
+          <h3>计算机视觉</h3>
+          <p>开展鱼类密度估计、行为分析等视觉任务研究，结合多尺度特征提取与上下文增强技术。</p>
+        </div>
+        <div class="area-item">
+          <h3>智能物联网系统</h3>
+          <p>研究网络入侵检测、故障诊断等物联网安全技术，开发面向智慧海洋的智能物联平台。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 研究成果部分 -->
+  <section id="publications" class="research-page">
+    <div class="container">
+      <h2>研究成果</h2>
+
+      <!-- 期刊论文 -->
+      <div class="publication-list">
+        <h3 style="color: #005aa7; margin-bottom: 20px;">期刊论文</h3>
+
+        <div class="publication-item">
+          <div class="publication-title">Exploring amplified heterogeneity arising from heavy-tailed distributions in
+            federated learning</div>
+          <div class="publication-authors"><strong>Zhou, Y</strong>., Wang, J., Kong, X., Wu, S., Xie, X., & Qi, H.
+          </div>
+          <div class="publication-venue">IEEE Transactions on Mobile Computing, 23(12), 11519-11534. (SCI期刊, 中科院1区, CCF
+            A, IF:9.2)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">Federated Learning with complete service commitment of data heterogeneity</div>
+          <div class="publication-authors"><strong>Zhou, Y</strong>., Wang, J., Qin, Y., Kong, X., Xie, X., Qi, H., &
+            Zeng, D.</div>
+          <div class="publication-venue">Knowledge-Based Systems, 310, 112937. (SCI期刊, 中科院1区, CCF C, IF:7.6)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">联邦长尾学习研究综述</div>
+          <div class="publication-authors"><strong>周弈志</strong>, 王军晓, 谢鑫, 王鹏飞, 贾西贝, 齐恒 & 秦宇辰</div>
+          <div class="publication-venue">计算机学报, 48(04), 779-807. (EI期刊, CCF A)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">Federated Learning on Heterogeneous and Long-Tailed Data via Disentangled
+            Representation</div>
+          <div class="publication-authors"><strong>Zhou, Y</strong>., Wang, J., Qin, Y., Xie, X., Song, Z., & Qi, H.
+          </div>
+          <div class="publication-venue">IEEE Transactions on Mobile Computing. (SCI期刊, 中科院1区, CCF A, IF:9.2)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">Fish density estimation with multi-scale context enhanced convolutional neural
+            network</div>
+          <div class="publication-authors"><strong>Zhou, Y</strong>., Yu, H., Wu, J., Cui, Z., Pang, H., & Zhang, F.
+          </div>
+          <div class="publication-venue">Journal of Communications and Information Networks, 4(3), 80-88. (EI期刊)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">iDetector: A novel real-time intrusion detection solution for IoT networks
+          </div>
+          <div class="publication-authors">Kong, X., <strong>Zhou, Y</strong>., Xiao, Y., Ye, X., Qi, H., & Liu, X.
+          </div>
+          <div class="publication-venue">IEEE Internet of Things Journal, 11(19), 31153-31166. (SCI期刊, 中科院2区, IF:8.2)
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">PerioDformer: Periodic Disposition Enhanced Transformer for Times Series
+            Forecasting</div>
+          <div class="publication-authors">Tang, W., Xiao, Y., <strong>Zhou, Y</strong>., & Qi, H.</div>
+          <div class="publication-venue">Knowledge-Based Systems, 114088. (SCI期刊, 中科院1区, CCF C, IF:7.6)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">LogCALM: A Log-based Causal Discovery and Semantic Modeling Approach for
+            Network Fault Diagnosis</div>
+          <div class="publication-authors">Ye, X., <strong>Zhou, Y</strong>., Kong, X., Qi, H.</div>
+          <div class="publication-venue">Expert Systems with Applications, 130553. (SCI期刊, 中科院1区, CCF C, IF:7.5)</div>
+        </div>
+      </div>
+
+      <!-- 会议论文 -->
+      <div class="publication-list">
+        <h3 style="color: #005aa7; margin-bottom: 20px;">会议论文</h3>
+
+        <div class="publication-item">
+          <div class="publication-title">Fish behavior analysis based on computer vision: a survey</div>
+          <div class="publication-authors"><strong>Zhou, Y</strong>., Yu, H., Wu, J., Cui, Z., & Zhang, F.</div>
+          <div class="publication-venue">International Conference of Pioneering Computer Scientists, Engineers and
+            Educators, pp. 130-141. (EI会议)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">Financial Fraud Defense Strategy based on Gradient Compensated Asynchronous
+            Federated Learning</div>
+          <div class="publication-authors">Liu, T., <strong>Zhou, Y</strong>., Song, Z., Jia, X., Wu, S., & Qi, H.</div>
+          <div class="publication-venue">2024 IEEE 30th International Conference on Parallel and Distributed Systems
+            (ICPADS), pp. 158-165. (EI会议，CCF C)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">K asynchronous federated learning with cosine similarity based aggregation on
+            non-IID data</div>
+          <div class="publication-authors">Wu, S., <strong>Zhou, Y</strong>., Gao, X., & Qi, H.</div>
+          <div class="publication-venue">International conference on algorithms and architectures for parallel
+            processing, pp. 434-452. (EI会议，CCF C)</div>
+        </div>
+      </div>
+
+      <!-- 专利成果 -->
+      <!-- 专利成果 -->
+      <div class="publication-list">
+        <h3 style="color: #005aa7; margin-bottom: 20px;">专利成果</h3>
+
+        <div class="publication-item">
+          <div class="publication-title">基于不平衡数据分布的联邦学习网络流量分类模型训练方法、模型及分类方法</div>
+          <div class="publication-authors">齐恒,<strong>周弈志</strong>,申彦明</div>
+          <div class="publication-venue">CN202210506600.X, 2023-09-29. (发明专利，成果转化（普通许可）150万)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">基于异步联邦学习模型的防御医疗图像后门攻击的方法</div>
+          <div class="publication-authors">齐恒,<strong>周弈志</strong>,等</div>
+          <div class="publication-venue">CN202410457122.7, 2024-10-18. (发明专利)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">一种基于多尺度双通道的鱼群计数方法</div>
+          <div class="publication-authors">吴俊峰,<strong>周弈志</strong>,刘梁,等</div>
+          <div class="publication-venue">CN202310849404.7, 2024-01-26. (发明专利)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">基于自适应学习率的异步联邦学习参数更新方法、电子设备及存储介质</div>
+          <div class="publication-authors">齐恒,吴杉,<strong>周弈志</strong>,等</div>
+          <div class="publication-venue">CN202310985134.2, 2024-03-22. (发明专利)</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">基于检测框跟踪的航拍小目标跟踪方法</div>
+          <div class="publication-authors">齐恒,潘世抱,<strong>周弈志</strong></div>
+          <div class="publication-venue">CN202311344197.6, 2024-01-02. (发明专利)</div>
+        </div>
+      </div>
+
+      <!-- 科研项目 -->
+      <div class="publication-list">
+        <h3 style="color: #005aa7; margin-bottom: 20px;">科研项目</h3>
+
+        <div class="publication-item">
+          <div class="publication-title">国家重点研发项目：面向智慧生活的安全可信智能物联平台与融合服务</div>
+          <div class="publication-venue">项目编号：2019YFB2102400，参与人</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">国家自然科学基金面上项目：学习驱动及知识定义的网络流量分类关键技术的研究</div>
+          <div class="publication-venue">项目编号：62172069，参与人</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">国家重大科技基础设施未来网络开放试验项目：智能可控网络的原型演示及教学应用</div>
+          <div class="publication-venue">项目编号：2021C0101，参与人</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">基于激光雷达融合视觉模块技术研究（横向）</div>
+          <div class="publication-venue">中船重工海为郑州高科技有限公司，参与人</div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-title">装备柔性制造智能供应链技术研究（横向）</div>
+          <div class="publication-venue">中船重工海为郑州高科技有限公司，参与人</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 教学经历部分 -->
+  <section id="teaching" class="teaching-page">
+    <div class="container">
+      <h2>教学经历</h2>
+
+      <!-- 合并的课程部分 -->
+      <div class="publication-list">
+        <h3 style="color: #005aa7; margin-bottom: 20px;">教授课程</h3>
+
+        <div class="course-item">
+          <div class="course-title">人工智能导论（本科）</div>
+          <div class="course-description">
+            本课程介绍人工智能的基本概念、原理和方法，包括知识表示、搜索策略、机器学习等内容。通过课程学习，学生将了解人工智能的发展历程和现状，掌握基本的AI算法和应用技术。</div>
+        </div>
+
+        <div class="course-item">
+          <div class="course-title">机器学习基础（本科）</div>
+          <div class="course-description">本课程系统讲解机器学习的核心算法和技术，包括监督学习、无监督学习、强化学习等。课程注重理论与实践结合，学生将通过编程实验掌握各种机器学习算法的实现和应用。
+          </div>
+        </div>
+
+        <div class="course-item">
+          <div class="course-title">数据结构与算法（本科）</div>
+          <div class="course-description">
+            本课程介绍计算机科学中常用的数据结构和算法设计方法，包括线性表、树、图等数据结构，以及排序、搜索、动态规划等算法。通过课程学习，学生将具备分析和设计高效算法的能力。</div>
+        </div>
+
+        <div class="course-item">
+          <div class="course-title">大数据处理技术（本科）</div>
+          <div class="course-description">
+            本课程介绍大数据的基本概念、处理架构和关键技术，包括分布式文件系统、MapReduce编程模型、NoSQL数据库等。学生将通过实践项目掌握大数据处理的基本技能。</div>
+        </div>
+
+        <div class="course-item">
+          <div class="course-title">高级机器学习（研究生）</div>
+          <div class="course-description">
+            本课程深入探讨机器学习的前沿理论和方法，包括深度学习、概率图模型、贝叶斯学习等高级主题。课程注重学术研究能力的培养，要求学生阅读经典和最新研究论文，并完成研究报告。</div>
+        </div>
+
+        <div class="course-item">
+          <div class="course-title">人工智能前沿专题（研究生）</div>
+          <div class="course-description">本课程跟踪人工智能领域的最新研究进展，涵盖计算机视觉、自然语言处理、智能推荐系统等热点方向。课程采用研讨式教学，由教师和学生共同讲解和讨论前沿研究论文。
+          </div>
+        </div>
+
+        <div class="course-item">
+          <div class="course-title">数据挖掘与知识发现（研究生）</div>
+          <div class="course-description">本课程介绍数据挖掘的理论基础和主要技术，包括关联规则挖掘、聚类分析、分类预测等。学生将学习如何从海量数据中提取有价值的知识，并应用于实际问题。</div>
+        </div>
+      </div>
+
+      <!-- 教学成果 -->
+      <div class="publication-list">
+        <h3 style="color: #005aa7; margin-bottom: 20px;">教学成果</h3>
+
+        <div class="course-item">
+          <div class="course-title">教学奖励</div>
+          <div class="course-description">
+            <ul style="margin-left: 20px;">
+              <li>XX大学"教学名师"称号，2023年</li>
+              <li>省级"精品在线开放课程"（《人工智能导论》），2022年</li>
+              <li>校级"优秀教学成果一等奖"，2021年</li>
+              <li>校级"优秀教师"称号，2020年</li>
             </ul>
+          </div>
         </div>
-    </nav>
 
-    <!-- 个人简介部分 -->
-    <section class="intro">
-        <div class="container">
-            <div class="intro-content">
-                <div class="profile-pic">
-                    <svg width="200" height="200" viewBox="0 0 200 200">
-                        <circle cx="100" cy="100" r="90" fill="#f0f0f0" stroke="#ddd" stroke-width="2"/>
-                        <text x="100" y="110" font-family="Arial" font-size="36" text-anchor="middle" fill="#666">张教授</text>
-                    </svg>
-                </div>
-                <div class="bio">
-                    <h2>个人简介</h2>
-                    <p>您好！我是张教授，现任XX大学计算机科学与技术学院教授、博士生导师。我的主要研究方向包括人工智能、机器学习和大数据分析等领域。</p>
-                    <p>我拥有X年的教学经验，在国内外高水平期刊和会议上发表论文X余篇，主持国家级科研项目X项。我致力于培养具有创新能力的计算机专业人才，并积极推动人工智能技术在各领域的应用与发展。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 研究领域部分 -->
-    <section class="research-areas">
-        <div class="container">
-            <h2>研究领域</h2>
-            <div class="areas-grid">
-                <div class="area-item">
-                    <h3>人工智能</h3>
-                    <p>研究智能算法、深度学习模型及其在复杂问题中的应用。</p>
-                </div>
-                <div class="area-item">
-                    <h3>机器学习</h3>
-                    <p>探索高效的机器学习算法、模型优化方法和实际应用场景。</p>
-                </div>
-                <div class="area-item">
-                    <h3>大数据分析</h3>
-                    <p>开发大规模数据处理技术和数据分析方法，提取有价值的信息。</p>
-                </div>
-                <div class="area-item">
-                    <h3>自然语言处理</h3>
-                    <p>研究计算机理解和生成人类语言的技术与应用。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 最新动态 -->
-    <section class="news">
-        <div class="container">
-            <h2>最新动态</h2>
-            <ul class="news-list">
-                <li><span class="date">2024-01-15</span> <p>主持的国家级科研项目"面向复杂场景的智能决策系统"获得批准。</p></li>
-                <li><span class="date">2023-12-10</span> <p>在IEEE Transactions on Neural Networks and Learning Systems发表论文"A Novel Deep Learning Framework for Complex Pattern Recognition"。</p></li>
-                <li><span class="date">2023-11-05</span> <p>受邀参加国际人工智能大会并做主题演讲。</p></li>
+        <div class="course-item">
+          <div class="course-title">指导学生竞赛获奖</div>
+          <div class="course-description">
+            <ul style="margin-left: 20px;">
+              <li>中国"互联网+"大学生创新创业大赛金奖，2023年</li>
+              <li>全国大学生数学建模竞赛一等奖，2022年</li>
+              <li>"挑战杯"全国大学生课外学术科技作品竞赛二等奖，2021年</li>
+              <li>全国大学生人工智能创新大赛一等奖，2020年</li>
             </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- 页脚 -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 个人学术网站. All rights reserved.</p>
+        <div class="course-item">
+          <div class="course-title">教材编写</div>
+          <div class="course-description">
+            <ul style="margin-left: 20px;">
+              <li>《人工智能：理论与实践》，XX出版社，2023年</li>
+              <li>《机器学习基础教程》，XX出版社，2021年</li>
+              <li>《大数据处理技术及应用》，XX出版社，2019年</li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式部分 -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>联系方式</h2>
+
+      <div class="contact-content">
+        <!-- 联系信息 -->
+        <div class="contact-info">
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#005aa7">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.25-.52 0-.68l7.19-4.57c.37-.23.85-.23 1.22 0L19.6 7.57c.25.16.25.52 0 .68z" />
+            </svg>
+            <span>电子邮箱：zhouyizhi@dlou.edu.cn</span>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#005aa7">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <span>地址：辽宁省大连市沙河口区黑石礁街52号</span>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#005aa7">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 12H6v-2h6v2zm0-3H6V9h6v4zm0-3H6V6h6v2zm7 6h-4v-2h4v2zm0-3h-4V9h4v4zm0-3h-4V6h4v2z" />
+            </svg>
+            <span>邮政编码：116023</span>
+          </div>
+        </div>
+
+        <!-- 社交媒体链接 -->
+        <div class="social-section">
+          <h3 style="color: #005aa7; margin-bottom: 20px;">关注我</h3>
+          <div class="social-links">
+            <a href="#" class="social-icon" title="ResearchGate">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="#00CCBB">
+                <path
+                  d="M9.8,12.2c0.2,0.2,0.5,0.2,0.7,0c0,0,1.3-1.3,3.1-3.1c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0c-1.8,1.8-3.1,3.1-3.1,3.1 C9.6,11.7,9.6,12,9.8,12.2z M12,1.9C5.9,1.9,1,6.8,1,12s4.9,10.1,11,10.1s11-4.9,11-10.1S18.1,1.9,12,1.9z M16.4,15.8h-0.2l-2.1-2.1v-3.3 h2.3v5.4H16.4z M12,18.5l-3.8-3.8V9.2h2.3v4.5l3.5,3.5L12,18.5z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="Google Scholar">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="#4285F4">
+                <path
+                  d="M5.385 3.39h13.23v5.871H5.385zm0 4.484h13.23v12.317H9.375v-5.398H5.385zm6.177 5.398v5.398h7.053V13.272h-7.053z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="LinkedIn">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="#0077B5">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="GitHub">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="#333333">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 周弈志个人学术网站. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
